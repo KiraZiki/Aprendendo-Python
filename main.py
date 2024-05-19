@@ -37,9 +37,8 @@ for x in range(len(ListaNum)):
 print("_________________________________________________________")
 #Adicionando mais dados dentro de uma lista(mais avançado)
 ListNumTest = [6,5,4]
-for y in range(len(ListaNum)):
-    print("Os valores dentro da lista são:")
-    print(ListaNum[y])
+for y in range(len(ListNumTest)):
+    print("Os valores dentro da lista são:", ListNumTest[y])
 confirmacao = str(input("Você deseja acrescentar mais numeros a lista? s/n: "))
 if confirmacao == "s":
     w = int(0)
@@ -99,3 +98,17 @@ while True:
         "nome": nome,
         "texto": texto 
     })
+print("_________________________________________________________")
+#Function
+def calculoAD(num1, num2):
+    return num1 + num2
+
+while True:
+    num1 = int(input("Digite o primeiro valor a ser calculado: "))
+    num2 = int(input("Digite o segundo valor a ser calculado: "))
+    if num1 != "" and num2 != "":
+        resposta = calculoAD(num1, num2)
+        print("O resultado é: ", resposta)
+        confirm = str(input("Deseja fazer mais um calculo? s/n: "))
+        if confirm != str("s"):
+            break
